@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table class="table table-bordered">
+        <tr>
+                <th>Ciudades</th>
+                <th>Temperatura</th>
+                <th>humedad</th>
+
+        </tr>
+        <tr>
+                <td>{{ data.name }}</td>
+                <td>{{ data.weather.0.main }} ({{ data.weather.0.description }})</td>
+                <td>{{ data.main.humidity }}</td>
+        </tr>
+</table>
+{% endblock content %}

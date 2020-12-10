@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Users{% endblock title %}
+
+{% block content %}
+<table class="table table-bordered">
+{% for user in users %}
+    <tr>
+        <th><a class="" href="/user/{{ user.id }}">{{ user.name }}</a></th>
+    </tr>
+    <tr>
+        <td>Publico</td>
+
+    </tr>
+
+{% endfor %}
+</table>
+
+{% endblock content %}
